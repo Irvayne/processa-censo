@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Procura Censa</title>
+	<title>Procura Censo</title>
 	<script type="text/javascript">
             function procurar(){
             	var texto=document.getElementById("texto").value;
 				var num=document.getElementById("campo").value;
 				var res = texto.split("\n");
-				var linha = res[1];
+				var linha = res[0];
 				res = linha.split("|");
 				var coluna = res[num - 1];
 				if(coluna === ''){
 					coluna = 'vazio';
 				}
-				alert("Registro 10 - Valor do campo "+ num + " é: "+ coluna);
+				alert("Registro "+res[0]+" - Valor do campo "+ num + " é: "+ coluna);
             }
      </script>
 	
